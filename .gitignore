@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+Walking.txt
+
+# Dir
+.vscode
