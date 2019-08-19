@@ -17,24 +17,24 @@ g++ ./src/OutputData.cpp -I "./include" -I "./src" -o ./debug/OutputData.exe
 将OutputData编译debug中，名为`OutputData.exe`，编译生成的exe文件在`debug`文件夹中。
 ## 参数调节
 **步态参数**使用ini文件进行参数管理，可以直接修改`config.ini`文件的文本就可以改变参数，一些参数的名称和意义如下。  
-name | meaning  
-:-: | :-:
-x_offect | X方向偏置，负值为前倾
-y_offect | Y方向偏置
-z_offect | Z方向偏置，正值为下蹲
-period_time | 步态循环一周期的时间
-foot_height | 抬脚高度
-hip_pitch_offset | 胯部控制的身体前倾角度，正值前倾
-x_move_amplitude | 步长，前后位移量，正值前进
-y_move_amplitude | 侧移，左右位移量，正值前进
-a_move_amplitude | 偏转，控制转弯角度  
+| name | meaning |  
+| :----: | :----: |
+| x_offect | X方向偏置，负值为前倾 |
+| y_offect | Y方向偏置 |
+| z_offect | Z方向偏置，正值为下蹲 |
+| period_time | 步态循环一周期的时间 |
+| foot_height | 抬脚高度 |
+| hip_pitch_offset | 胯部控制的身体前倾角度，正值前倾 |
+| x_move_amplitude | 步长，前后位移量，正值前进 |
+| y_move_amplitude | 侧移，左右位移量，正值前进 |
+| a_move_amplitude | 偏转，控制转弯角度 |
 **机械参数**内置在文件`src\Kinematics.cpp`中，主要是腿部的连杆长度，预置了两套参数，使用时取消备注就可以，参数名称和意义如下。
-name | meaning  
-:-: | :-:
-THIGH_LENGTH | 大腿长度
-CALF_LENGTH | 小腿长度
-ANKLE_LENGTH | 脚踝长度
-LEG_LENGTH | 全腿长度  
+| name | meaning |
+| :----: | :----: |
+| THIGH_LENGTH | 大腿长度 |
+| CALF_LENGTH | 小腿长度 |
+| ANKLE_LENGTH | 脚踝长度 |
+| LEG_LENGTH | 全腿长度 |
 ## 动画演示
 动画演示通过MATLAB实现，以下列出了代码和对应的效果。  
 `GrabWalkingData.m` 绘制舵机数值曲线图。  
